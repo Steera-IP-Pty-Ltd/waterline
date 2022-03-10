@@ -1,13 +1,10 @@
 {
-  "name": "waterline",
+  "name": "@steera/waterline",
   "description": "An ORM for Node.js and the Sails framework",
   "version": "0.15.0",
   "homepage": "http://waterlinejs.org",
   "contributors": [
-    {
-      "name": "seerepo",
-      "github": "https://github.com/balderdashy/waterline/graphs/contributors"
-    }
+    "seerepo"
   ],
   "dependencies": {
     "@sailshq/lodash": "^3.10.2",
@@ -37,7 +34,10 @@
     "sails",
     "sails.js"
   ],
-  "repository": "git://github.com/balderdashy/waterline.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/balderdashy/waterline.git"
+  },
   "main": "./lib/waterline",
   "scripts": {
     "test": "nodever=`node -e \"console.log('\\`node -v\\`'[1]);\"` && if [ $nodever != \"0\" ]; then npm run lint; fi && npm run custom-tests",
@@ -51,5 +51,11 @@
   "bugs": {
     "url": "https://sailsjs.com/bugs"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "nehakhullar"
 }
